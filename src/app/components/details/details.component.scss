@@ -9,6 +9,7 @@
     height: 150px;
     display: block;
     padding: 10px;
+    margin:15px;
 
     .dial {
       stroke-width: 10;
@@ -22,22 +23,26 @@
       fill: #fff;
       font-weight: 700;
       font-size: 24px;
+      text-shadow: 0px 0px 4px #444;
     }
   }
 
   .game-gauge {
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: 10px;
+    right: -50px;
 
     &-label {
       font-size: 20px;
       color: #fff;
       position: relative;
       bottom: 60px;
+      text-shadow: 0px 0px 4px #444;
+
     }
   }
 }
+
 .game {
     &-banner {
       height: 442px;
@@ -56,22 +61,29 @@
     }
   
     &-header {
+      
       &-title {
+        margin:10px;
         font-size: 70px;
         color: #fff;
         font-weight: 700;
-        line-height: 70px;
+        text-shadow: 0px 0px 4px #444;
+        line-height: 80px;
         white-space: nowrap;
       }
   
       &-release-date {
         color: #fff;
         font-weight: 700;
+        text-shadow: 0px 0px 4px #444;
+
       }
   
       &-genres {
         color: #fff;
         font-weight: 700;
+        text-shadow: 0px 0px 4px #444;
+
       }
     }
   }
