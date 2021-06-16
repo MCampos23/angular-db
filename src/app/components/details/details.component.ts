@@ -33,9 +33,11 @@ export class DetailsComponent implements OnInit, OnDestroy {
     .getGameDetails(id)
     .subscribe((gameResp: Game) => {
       this.game = gameResp
-      setTimeout(() =>{
-        this.gameRating = this.game.metacritic
-        }, 1000)
+      if (this.game.metacritic){
+        setTimeout(() =>{
+          this.gameRating = this.game.metacritic
+          }, 1000)
+      }
       })
   }
 
